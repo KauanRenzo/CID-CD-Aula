@@ -11,27 +11,43 @@ public class Calculadora {
     
     
     public static void main(String[] args) {
+        if (op == 1){
+            soma(num1, num2);
+        }else if (op == 2){
+            subtracao(num1, num2);
+        }else if (op == 3){
+            multiplicacao(num1, num2);
         
+        }else if (op == 4){
+            divisao(num1, num2);
+            }
+                   
     }
         
-        public double soma (double num1, double num2){
+        public static double  soma (double num1, double num2){
             double resultado = num1+num2;
+            System.out.println("O resultado da soma é: " + resultado);
             return resultado;
         
     }
-        public double subtração (double num1, double num2){
+        public static double subtracao (double num1, double num2){
             double resultado = num1-num2;
+            System.out.println("O resultado da subtração é: " + resultado);
             return resultado;
             
 }
-        public double multiplicação (double num1, double num2){
+        public static double multiplicacao (double num1, double num2){
             double resultado = num1*num2;
+            System.out.println("O resultado da multiplicação é: " + resultado);
             return resultado;
 }
-        public double divisão (  double num1,  double num2){
+        public static double divisao (  double num1,  double num2){
             double resultado = num1/num2;
+            System.out.println("O resultado da divisão é: " + resultado);
             return resultado;
 }
 }
+
+
 
     
